@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class GradeBook {
+public:
+    explicit GradeBook(std::string, std::string); 
+    void setCourseName(std::string); 
+    void setInstructorName(std::string); 
+    std::string getCourseName() const; 
+    std::string getInstructorName() const; 
+    void displayMessage() const; 
+    
+private:
+    std::string courseName;
+    std::string instructorName; 
+};
+
+GradeBook::GradeBook(std::string course, std::string instructor)
+    : courseName(course), instructorName(instructor) {}
+
+void GradeBook::setCourseName(std::string name) {
+    courseName = name;
+}
+
+void GradeBook::setInstructorName(std::string name) {
+    instructorName = name;
+}
+
+std::string GradeBook::getCourseName() const {
+    return courseName;
+}
+
+std::string GradeBook::getInstructorName() const {
+    return instructorName;
+}
+
+void GradeBook::displayMessage() const {
+    std::cout << "Welcome to the grade book for\n" << getCourseName()
+              << "!\nThis course is presented by: " << getInstructorName() << std::endl;
+}
+
+int main() {
+    GradeBook gb("C and C++", "Mr. Alex Yang");
+    gb.displayMessage();
+    cout << "\n";
+    
+    
+    gb.setCourseName("C and C++ Lab");
+    gb.setInstructorName("Mr. Alex Yang");
+    gb.displayMessage();
+
+    return 0;
+}
+
