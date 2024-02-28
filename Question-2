@@ -13,13 +13,13 @@
 
 class Date {
 public:
-    Date(int m, int d, int y); // Constructor
-    void setMonth(int m); // Set month
-    int getMonth() const; // Get month
-    void setDay(int d); // Set day
-    int getDay() const; // Get day
-    void setYear(int y); // Set year
-    int getYear() const; // Get year
+    Date(int m, int d, int y); 
+    void setMonth(int m); 
+    int getMonth() const; 
+    void setDay(int d); 
+    int getDay() const; 
+    void setYear(int y); 
+    int getYear() const; 
     void displayDate() const; // Display date
 private:
     int month;
