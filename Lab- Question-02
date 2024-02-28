@@ -1,1 +1,76 @@
+// 2.	Complete two methods, get_data() and print_data() within  the given class sample based on the running results shown as below
 
+// #include<iostream> 
+// using std::cout;
+// using std::cin;
+// using std::endl;
+
+// class sample{
+//   private:
+// int a; 
+// char b; 
+// float c;
+  
+//   public:
+// void get_data(){
+// 	//Write your program here
+//     }
+// void print_data(){
+// 	//Write your program here
+//     }
+// };
+// int main(void){
+//   sample s;
+//   s.get_data(); 
+//   s.print_data();
+  
+//   return 0;
+// }
+
+// Answer :
+
+// #include<iostream>
+// using std::cout;
+// using std::cin;
+// using std::endl;
+
+// class sample {
+// private:
+//     int a;
+//     char b;
+//     float c;
+// public:
+//     void get_data() {
+//         cout << "Enter an integer value: ";
+//         cin >> a;
+//         cout << "Enter a character: ";
+//         cin >> b;
+//         cout << "Enter a float value: ";
+//         cin >> c;
+//     }
+
+//     void print_data() {
+//         cout << "Values read from keyboard are" <<endl;
+//         cout << "Integer value: " << a << endl;
+//         cout << "Character is: " << b << endl;
+//         cout << "Float value is: " << c << endl;
+//     }
+// };
+
+// int main(void) {
+//     sample s;
+//     s.get_data();
+//     s.print_data();
+//     return 0;
+// }
+
+
+// Output :
+
+// Enter an integer value: 12
+// Enter a character: S
+// Enter a float value: 12.12
+// Values read from keyboard are
+// Integer value: 12
+// Character is: S
+// Float value is: 12.12
